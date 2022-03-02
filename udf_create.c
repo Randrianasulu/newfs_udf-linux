@@ -29,6 +29,9 @@
 #include "nbtool_config.h"
 #endif
 
+#define __RCSID(_s) /* nothing */
+#define __SCCSID(_s) /* nothing */
+
 #include <sys/cdefs.h>
 __RCSID("$NetBSD: udf_create.c,v 1.30 2021/08/20 20:25:26 andvar Exp $");
 
