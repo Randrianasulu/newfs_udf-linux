@@ -68,6 +68,9 @@
 #include "udf_write.h"
 #include "newfs_udf.h"
 
+const char* getprogname(void);
+void setprogname(const char* __name);
+
 char *
 snprintb (char *buffer, size_t n, unsigned v, char *bits)
 {
