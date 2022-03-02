@@ -77,8 +77,7 @@ static int wput_utf8(char *, size_t, u_int16_t) __unused;
  * and return the character.
  */
 static u_int16_t
-wget_utf8(const char **str, size_t *sz)
-{
+wget_utf8(const char **str, size_t *sz) {
 	unsigned int c;
 	u_int16_t rune = 0;
 	const char *s = *str;
@@ -131,8 +130,7 @@ wget_utf8(const char **str, size_t *sz)
  * to the target string 's'.
  */
 static int
-wput_utf8(char *s, size_t n, u_int16_t wc)
-{
+wput_utf8(char *s, size_t n, u_int16_t wc) {
 	if (wc & 0xf800) {
 		if (n < 3) {
 			/* bound check failure */
