@@ -35,7 +35,7 @@
 // #include <sys/bswap.h>
 #include <byteswap.h>
 
-if defined(__TERMUX__) 
+#if defined(__TERMUX__) 
 
 static inline uint16_t bswap16(uint16_t x)
 {
