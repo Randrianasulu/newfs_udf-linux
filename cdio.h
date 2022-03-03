@@ -4,6 +4,8 @@
 #define _SYS_CDIO_H_
 
 #include  <sys/endian.h>
+#define _LITTLE_ENDIAN 1234
+#define BYTE_ORDER _LITTLE_ENDIAN
 
 // #include <sys/ioccom.h>
 
